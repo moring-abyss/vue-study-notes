@@ -1,0 +1,21 @@
+lockfileVersion: 5.4
+
+importers:
+
+  .:
+    specifiers: {}
+
+  packages/core:
+    specifiers:
+      '@mono-by-pnpm/dom': 1.0.0
+    dependencies:
+      '@mono-by-pnpm/dom': link:../dom
+
+  packages/dom:
+    specifiers:
+      '@mono-by-pnpm/util': 1.0.0
+    dependencies:
+      '@mono-by-pnpm/util': link:../util
+
+  packages/util:
+    specifiers: {}
