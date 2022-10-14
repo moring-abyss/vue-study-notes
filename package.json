@@ -1,15 +1,20 @@
 {
   "name": "mono-by-pnpm",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "packageManager": "pnpm@7.1.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node scripts/build.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "engines": {
     "node": ">=16.11.0"
+  },
+  "devDependencies": {
+    "execa": "^6.1.0",
+    "minimist": "^1.2.7"
   }
 }
