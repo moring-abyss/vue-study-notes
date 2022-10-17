@@ -1,4 +1,5 @@
-
+const path = require('path')
+const fs = require('fs-extra')
 const execa = require('execa')
 const args = require('minimist')(process.argv.slice(2))
 const { targets: allTargets } = require('./utils')
@@ -58,6 +59,7 @@ async function build(target) {
   const env =
     (pkg.buildOptions && pkg.buildOptions.env) ||
     (devOnly ? 'development' : 'production')
+
   await execa(
     'rollup',
     [

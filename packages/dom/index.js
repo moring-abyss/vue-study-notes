@@ -1,6 +1,7 @@
+'use strict'
 
-const util = require("@mono-by-pnpm/util")
-module.exports = function dom() {
-  util()
-  console.log("dom")
+if (process.env.NODE_ENV === 'production') {
+  module.exports = require('./dist/dom.esm-browser.prod.js')
+} else {
+  module.exports = require('./dist/dom.esm-browser.js')
 }
