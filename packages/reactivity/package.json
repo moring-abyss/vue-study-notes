@@ -1,0 +1,19 @@
+{
+  "name": "reactivity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "types": "test-dts/index.d.ts",
+  "devDependencies": {
+    "@vue/reactivity": "^3.2.41"
+  },
+  "dependencies": {
+    "@vue/shared": "^3.2.41"
+  }
+}

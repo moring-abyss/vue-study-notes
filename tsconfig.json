@@ -16,7 +16,7 @@
     "removeComments": false,
     "jsx": "preserve",
     "lib": ["esnext", "dom"],
-    "types": [],
+    "types": ["jest", "node"],
     "rootDir": ".",
     "paths": {
       "@mono-by-pnpm/*": ["packages/*/src"]
